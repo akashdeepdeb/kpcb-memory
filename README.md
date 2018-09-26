@@ -1,2 +1,2 @@
-# kpcb-bluff-game
-Making a fun, terminal bluff card game for the kpcb application
+# kpcb-memory
+Making a fun, terminal, memory game for the kpcb app
