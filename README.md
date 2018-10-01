@@ -47,6 +47,8 @@ The game's organization is fairly flat and modular design with the use of additi
         if no match:
             append both to the cache and pop if overflow occurs
      ```
+- `utils.py` has been used for utility functions that other files have commonly called. It makes more sense to make a general function for utility tools so all other classes and objects can import one file for such methods. 
+
 
 ### Tooling
 
