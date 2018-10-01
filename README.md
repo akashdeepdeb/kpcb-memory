@@ -1,5 +1,6 @@
 # Memory
 Making a fun, terminal, memory card game (also called Concentration)
+Github here: [https://github.com/akashdeepdeb/kpcb-memory]
 
 ### Instructions
 Running the game is fairly straightforward.
