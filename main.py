@@ -23,6 +23,7 @@ import os
 import subprocess as sp
 
 def main():
+	level = 0
 	card_ranks = ['A','2','3','4','5','6','7','8','9','T','J','Q','K']
 	card_suits = ['s', 'h', 'd', 'c']
 	card_jokers = [Card('§', '§',True), Card('§', '§',True)]
@@ -30,8 +31,16 @@ def main():
 	random.shuffle(card_list)
 	os.system('clear')
 	# ask how many players the user wants to play with from 2-5
-	n = int(input('===== WELCOME TO THE MEMORY GAME HUMANS, ROBOTS AND MOCHI =====\nHow many players would like to play memory today? '))
+	n = int(input('===== WELCOME TO THE MEMORY GAME HUMANS, ROBOTS AND MOCHI =====\nHow many players would like to play memory today?\nEnter 1 to play with the computer or >2 to play with friends! '))
+	computer_mode = True if n == 1 else False
+	
+	if computer_mode:
+		n+=1
+		while True:
+			level = int(input('Be prepared to be challenged by the mighty AI Memory Master! What level do you choose? (Enter value from 1-5): '))
+			if 0<level<6:
+				break
 
-	start = Game(card_list, n)
+	start = Game(card_list, n, computer_mode, level)
 
 main()

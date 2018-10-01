@@ -18,8 +18,8 @@ class DisplaySet(object):
 
 	def cheat_code(self):
 		for j in range(6):
-			for i in self.curr_state[j*9: (j+1)*9]:
-				print(i, end=' ') if i.hidden else print('**', end=' ')
+			for idx, i in enumerate(self.curr_state[j*9: (j+1)*9]):
+				print(i, '[' + chr(97+idx) + str(6-j) + ']', end='  ') if i.hidden else print('*******', end='  ')
 			print('\n')
 
 
@@ -64,9 +64,12 @@ class DisplaySet(object):
 
 
 class DisplayEndMessage(object):
-	def __init__(self, winning_player):
+	def __init__(self, winning_player, winning_score):
 		self.winning_player = winning_player
+		self.winning_score = winning_score
 		self.show_end_message()
 
 	def show_end_message(self):
-		pass
+		print('\nThe winner had a whopping score of ' + str(self.winning_score) + '! ')
+		print('*** CONGRATULATIONS TO PLAYER ' + str(self.winning_player+1) + '! ***\n*** YOU HAVE A VERY SHARP MEMORY! ***')
+

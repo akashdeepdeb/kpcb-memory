@@ -1,0 +1,23 @@
+REQUIREMENTS
+
+Along with your code, include a design document covering:
+
+Instructions for running your code and any tests you may have written
+
+Rules for your card game, if not one of the three listed above
+
+A brief explanation of your design choices and any data structures or algorithms that you implemented
+
+Choice of tooling (language, libraries, test runner, etc.) and rationale behind those choices.
+
+GRADING
+
+Does the game work, i.e. is it possible to play a complete game of the card game you chose?
+
+How thoughtful were your system design decisions?
+
+Is the game designed well / easily playable?
+
+Is the code organized, modular, and well-factored?
+
+What edge cases were considered and accounted for?
