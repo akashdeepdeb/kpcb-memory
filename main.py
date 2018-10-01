@@ -31,7 +31,7 @@ def main():
 	random.shuffle(card_list)
 	os.system('clear')
 	# ask how many players the user wants to play with from 2-5
-	n = int(input('===== WELCOME TO THE MEMORY GAME HUMANS, ROBOTS AND MOCHI =====\nHow many players would like to play memory today?\nEnter 1 to play with the computer or >2 to play with friends! '))
+	n = int(input('===== WELCOME TO THE MEMORY GAME HUMANS AND ROBOTS =====\nHow many players would like to play memory today?\nEnter 1 to play with the computer or >2 to play with friends! '))
 	computer_mode = True if n == 1 else False
 	
 	if computer_mode:
