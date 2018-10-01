@@ -10,7 +10,7 @@ Perform the following steps in the current directory:
 ```
 You should get the following terminal output, waiting for a response:
 ```
-    ===== WELCOME TO THE MEMORY GAME HUMANS, ROBOTS AND MOCHI =====
+    ===== WELCOME TO THE MEMORY GAME HUMANS AND ROBOTS =====
     How many players would like to play memory today?
     Enter 1 to play with the computer or >2 to play with friends! 
 ```
